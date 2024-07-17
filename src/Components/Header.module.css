@@ -1,0 +1,126 @@
+.header {
+    background-color: white;
+    padding: 30px 0;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.25));
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.location:hover {
+    color: #12C043;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.phone:hover {
+    color: #12C043;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.logo {
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 22px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: linear-gradient(79.6deg, #19992dff 0%, #12c043ff 100%);
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 6px 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.logo img {
+    width: 165px;
+    cursor: pointer;
+}
+
+.search {
+    width: 781px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    padding: 12px 24px;
+    color: #989898;
+}
+
+.search input {
+    width: 700px;
+    outline: none;
+    background-color: #EDEDED;
+    color: #202020;
+}
+
+.search svg {
+    cursor: pointer;
+}
+
+.sections {
+    display: flex;
+    gap: 36px;
+}
+
+.sections .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sections .section svg {
+    color: #989898;
+}
+
+.sections .section:hover svg {
+    color: #12C043;
+}

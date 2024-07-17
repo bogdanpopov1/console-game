@@ -1,0 +1,39 @@
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    background-color: white;
+    filter:drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.photo {
+    width: 248px;
+    height: 170px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.title {
+    width: 218px;
+    height: 40px;
+    margin: 0 25px 25px;
+}
+
+.categories h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+}

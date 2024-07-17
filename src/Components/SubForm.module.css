@@ -1,0 +1,46 @@
+.sub {
+    background-color: white;
+    width: 100;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 750px;
+}
+
+.info h1 {
+    margin: 0;
+}
+
+.input__button {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input__button input {
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #EDEDED;
+    padding: 12px 24px;
+    color: #202020;
+    outline: none;
+}
+
+.input__button button {
+    font-size: 20px;
+}
+
+.input__button span {
+    color: #12C043;
+}

@@ -1,0 +1,118 @@
+.bestsellers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    filter:drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 14px;
+    padding: 10px 14px 14px;
+}
+
+.photo {
+    width: 240px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.title {
+    width: 218px;
+    height: 40px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: #3F67F6;
+}
+
+.bestsellers h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    gap: 2px;
+    color: #12C043;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.rating:hover {
+    color: #09a836;
+}
+
+.reviews {
+    color: #989898;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.reviews:hover {
+    color: #3F67F6;
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.price h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.price p {
+    text-decoration: 1px line-through;
+    color: #989898;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.buttons button {
+    width: 100%;
+    max-width: 198px;
+    padding: 0.4em 0;
+    transition: all ease-in-out 0s;
+}
+
+.buttons span {
+    cursor: pointer;
+}
+
+.selectedButton {
+    background-color: #989898;
+}
+
+.heart__icon {
+    color: #12C043;
+    height: 36px;
+    cursor: pointer;
+}
+
+.heart__icon:hover {
+    color: #09a836;
+}

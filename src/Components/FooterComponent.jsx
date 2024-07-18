@@ -9,7 +9,9 @@ export function FooterComponent() {
                     <div className={styles.footer}>
 
                         <div className={styles.logo}>
-                            <img src="/images/logo/logo.png" alt="Logo" />
+                            <Link to={"/"}>
+                                <img src="/images/logo/logo.png" alt="Logo" />
+                            </Link>
                             <button>Карта магазинов</button>
                         </div>
 

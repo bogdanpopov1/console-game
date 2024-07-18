@@ -1,13 +1,13 @@
-import React from 'react'
-import styles from './Bestsellers.module.css'
-import DOMPurify from 'dompurify'
-import { HeartIcon } from '@heroicons/react/24/outline'
-import { GetId, Goods } from '../context/Goods'
+import React, { useState } from 'react'
 import { useContext } from 'react'
-import { AppContext } from "./../context/AppContext"
 import { Link } from 'react-router-dom'
+import { AppContext } from '../context/AppContext'
+import styles from './Favorites.module.css'
+import { HeartIcon } from '@heroicons/react/24/solid'
+import DOMPurify from 'dompurify'
+import { GetId } from '../context/Goods'
 
-export function Bestsellers() {
+export function Favorites() {
 
     const [cartModal, setCartModal, cart, setCart, popup, setPopup, favorites, setFavorites] = useContext(AppContext)
 
@@ -33,24 +33,6 @@ export function Bestsellers() {
         setCart(updatedCart)
     }
 
-
-
-    const addToFavorites = (item) => {
-        const exists = favorites.find((p) => p.id === item.id)
-        if (!exists) {
-
-            const newCart = [
-                ...favorites,
-                {
-                    ...item,
-                    quantity: 1,
-                }
-            ]
-            item.isFavorite = !item.isFavorite
-            setFavorites(newCart)
-        }
-    }
-
     const removeFromFavorites = (item) => {
         const updatedFavorites = favorites.filter(p => p.id !== item.id)
         item.isFavorite = !item.isFavorite
@@ -65,15 +47,12 @@ export function Bestsellers() {
         return cart.find((p) => p.id === item.id)
     }
 
-
-    const bestsellers = Goods
-
-    let res = bestsellers.map((item) => {
+    let res = favorites.map((item) => {
         return (
             <div key={item.id} className={styles.card}>
 
                 <div className={styles.photo}>
-                    <img src={item.img} alt="Фото" />
+                    <img src={item.img} alt="Фото категории" />
                 </div>
 
                 <div className={styles.title}>
@@ -114,19 +93,31 @@ export function Bestsellers() {
                             : <HeartIcon className={styles.heart__icon} onClick={() => addToFavorites(item)} />
 
                     }
-
-
                 </div>
-
             </div >
         )
     })
 
     return (
         <>
-            <div className={styles.bestsellers}>
-                {res}
+            <div className='container'>
+                <div className={styles.main}>
+                    {console.log(cart)}
+                    <div className={styles.path}>
+                        <Link to={'/'}><p>Главная</p></Link>
+                        <span>></span>
+                        <h4>Избранное</h4>
+                    </div>
+
+                    <h1>Избранное</h1>
+
+                    <div className={styles.favorites}>
+                        {res}
+                    </div>
+                </div>
             </div>
+
+
         </>
     )
 }

@@ -9,6 +9,7 @@ export const Goods = [
         oldPrice: 699,
         isFavorite: false,
         inCart: false,
+        quantity: 1,
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ export const Goods = [
         oldPrice: 449,
         isFavorite: false,
         inCart: false,
+        quantity: 1,
     },
     {
         id: 3,
@@ -31,6 +33,7 @@ export const Goods = [
         oldPrice: 10699,
         isFavorite: false,
         inCart: false,
+        quantity: 1,
     },
     {
         id: 4,
@@ -42,6 +45,7 @@ export const Goods = [
         oldPrice: 6699,
         isFavorite: false,
         inCart: false,
+        quantity: 1,
     },
     {
         id: 5,
@@ -53,5 +57,12 @@ export const Goods = [
         oldPrice: 1299,
         isFavorite: false,
         inCart: false,
+        quantity: 1,
     },
 ]
+
+export let id = 1;
+
+export const GetId = (item) => {
+    id = item.id
+}

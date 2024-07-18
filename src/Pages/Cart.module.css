@@ -53,7 +53,8 @@
     gap: 6px;
 }
 
-.input input {
+.goods input {
+    width: 16px;
     cursor: pointer;
 }
 
@@ -64,6 +65,7 @@
 
 .details {
     width: 340px;
+    height: auto;
     background-color: white;
     background-color: white;
     display: flex;
@@ -71,4 +73,92 @@
     gap: 12px;
     border-radius: 14px;
     padding: 30px;
+}
+
+.goods{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.item input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    color: #12C043;
+}
+
+.photo {
+    width: 100%;
+    max-width: 180px;
+    object-fit: cover;
+}
+
+.item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.count button {
+    padding: 0.1em 0.5em;
+    color: #202020;
+    border: 2px solid #ECECEC;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.count button:hover {
+    background-color: #EDEDED;
+}
+
+.count p {
+    font-size: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.price h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.price p {
+    text-decoration: 1px line-through;
+    color: #989898;
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 auto auto;
 }
